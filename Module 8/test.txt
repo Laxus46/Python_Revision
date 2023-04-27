@@ -1,0 +1,33 @@
+How Does the Python Interpreter Work?
+The Python interpreter is called “CPython” and it's written in the C programming language. This is the default implementation for Python.
+
+In the following sections, you will understand how the Python interpreter works behind the scenes.
+
+Source Code Analysis
+Actually, any translator starts with the source code analysis. Here the Python interpreter receives the source code and initializes some instructions to do the following things:
+
+It follows the indentation rule and checks the Python syntax. Maybe there are some incorrect lines, so it will stop the program from the execution to show the error message.
+
+This phase is called lexical analysis, which means dividing the source code files into a list of tokens
+
+In the following step, the interpreter will generate byte codes. Let's see how that works.
+
+Byte Code Generation
+Once the parser of the Python interpreter receives the tokens, it starts to manipulate the lexical tokens. It generates a big structure called the AST (Abstract Syntax Tree).
+
+The interpreter converts this AST to byte code which means machine language. In Python, the byte code can be saved in a file ending with the “.pyc” extension.
+
+In the following section, you will see how the python interpreter executes these byte codes.
+
+The Python Virtual Machine (PVM)
+The Python interpreter initializes its runtime engine called PVM which is the Python virtual machine.
+
+The interpreter loads the machine language with the library modules and inputs it into the PVM. This converts the byte code into executable code such as 0s and 1s (binary).
+
+And then it prints the results.
+
+Note that if an error happens during the PVM process, the executor will terminate the operation immediately to display the error.
+
+Now you will learn how to install Python on your operating system.
+
+If you have no Python software or you're using a mobile device, you can use any online Python compiler.
