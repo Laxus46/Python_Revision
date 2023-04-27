@@ -39,3 +39,10 @@ print(msg)
 
 #see more information about str methods
 #print(help(str))
+
+string = "Hello World"
+substring = "World"
+if substring in string:
+    print("Substring found")
+else:
+    print("Substring not found")
