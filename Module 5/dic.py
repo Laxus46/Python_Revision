@@ -23,3 +23,27 @@ print(f"the alien is  now  {alien_o['color']}")
 
 del alien_o['points']
 print(alien_o)
+
+print("------------------------------")
+
+#iterate through keys directly
+a={'color':'blue','fruit':'apple','pet':'dog'}
+for key in a:
+    print(key,'->',a[key])
+
+print('-------------------------')
+#iterating throughh item()
+d=a.items()
+print(list(d))
+print('-----------------------')
+for item in a.items():
+    print(item)
+    print(type(item))
+
+print('------------------------')
+#tuple unpacking
+for key,value in a.items():
+    print(key,'->',value)
+
+keys=a.keys()
+print(keys)
