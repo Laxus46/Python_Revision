@@ -1,5 +1,8 @@
 def greeting(name):
   print("Hello, " + name)
+
+def add(a,b):
+  print('sum =',a+b)
   
 person1 = {
   "name": "Laxman",
